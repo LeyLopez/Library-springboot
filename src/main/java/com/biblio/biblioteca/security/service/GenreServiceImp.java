@@ -23,8 +23,8 @@ public class GenreServiceImp implements GenreService {
 
 
     @Override
-    public Optional<GenreDTO> findById(Long ig) {
-        return genreRepository.findById(ig).map(genreMapper::toDTO);
+    public Optional<GenreDTO> findById(Long id) {
+        return genreRepository.findById(id).map(genreMapper::toDTO);
     }
 
     @Override
@@ -34,7 +34,7 @@ public class GenreServiceImp implements GenreService {
 
     @Override
     public GenreDTO save(GenreDTO genreDTO) {
-        Genre genre = genreMapper.toEntity(genreDTO);
+        Genre genre = genreRepository.save(genreMapper.toEntity(genreDTO));
         return genreMapper.toDTO(genre);
     }
 
