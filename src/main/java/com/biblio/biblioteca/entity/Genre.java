@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashSet;
 import java.util.Set;
 //Clase que representa a la entidad generos, aquí se definen los atributos de la tabla generos,
 // entre los cuales se encuentran el id y el nombre del genero.
@@ -22,6 +23,8 @@ public class Genre {
     @Column(nullable = false)
     private String name;
 
-    @ManyToMany(mappedBy = "genres")
-    private Set<Book> books;
+    @OneToMany(targetEntity = Book.class, mappedBy = "genre", fetch = FetchType.EAGER)
+    private Set<Book> book;
+
+
 }

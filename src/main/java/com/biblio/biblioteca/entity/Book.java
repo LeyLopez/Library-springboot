@@ -44,6 +44,9 @@ public class Book {
     @ManyToOne(targetEntity = Author.class)
     private Author author;
 
+    @ManyToOne(targetEntity = Genre.class)
+    private Genre genre;
+
     //Relacion entre el libro y sus reservas
     @JsonIgnore
     @OneToMany(targetEntity = Reservation.class, mappedBy = "book", fetch = FetchType.LAZY)
@@ -52,14 +55,6 @@ public class Book {
     @JsonIgnore
     @OneToMany(targetEntity = Loan.class, mappedBy = "book", fetch = FetchType.LAZY)
     private Set<Loan> loans;
-
-
-    @ManyToMany
-    @JsonIgnore
-    @JoinTable(name = "book_genres",
-    joinColumns = @JoinColumn(name = "book_id", referencedColumnName = "id"),
-    inverseJoinColumns = @JoinColumn(name = "genre_id", referencedColumnName = "id"))
-    private Set<Genre> genres;
 
 
 }

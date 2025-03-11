@@ -8,7 +8,8 @@ public record BookDTO(Long id,
                       Date dateOfPublication,
                       Integer quantity,
                       Long author,
-                      String coverPage
+                      String coverPage,
+                      Long genre
 
 ) {
 }

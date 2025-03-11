@@ -16,11 +16,13 @@ public class BookServiceImp implements BookService {
     private final BookRepository bookRepository;
     private final BookMapper bookMapper;
     private final AuthorService authorService;
+    private final GenreService genreService;
 
-    public BookServiceImp(BookRepository bookRepository, BookMapper bookMapper, AuthorService authorService) {
+    public BookServiceImp(BookRepository bookRepository, BookMapper bookMapper, AuthorService authorService, GenreService genreService) {
         this.bookRepository = bookRepository;
         this.bookMapper = bookMapper;
         this.authorService = authorService;
+        this.genreService = genreService;
     }
 
 
@@ -38,7 +40,7 @@ public class BookServiceImp implements BookService {
 
     @Override
     public BookDTO save(BookDTO bookDTO) {
-        Book book = bookRepository.save(bookMapper.toEntity(bookDTO, authorService));
+        Book book = bookRepository.save(bookMapper.toEntity(bookDTO, authorService, genreService));
         return bookMapper.toDTO(book);
     }
 
@@ -73,6 +75,5 @@ public class BookServiceImp implements BookService {
     public Book findBookById(Long id) {
         return bookRepository.findById(id).orElse(null);
     }
-
 
 }

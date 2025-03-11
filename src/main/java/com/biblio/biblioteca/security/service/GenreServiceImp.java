@@ -59,4 +59,9 @@ public class GenreServiceImp implements GenreService {
                 .map(dto-> genreMapper.toDTO(dto))
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public Genre findGenreById(Long id) {
+        return genreRepository.findById(id).orElse(null);
+    }
 }
