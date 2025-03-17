@@ -60,4 +60,10 @@ public class ReservationServiceImp implements ReservationService {
                 .map(dto-> reservationMapper.toDTO(dto))
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public List<ReservationDTO> findByUserId(Long id) {
+        return userService.findUserById(id).getReservations()
+                .stream().map(reservationMapper::toDTO).collect(Collectors.toList());
+    }
 }

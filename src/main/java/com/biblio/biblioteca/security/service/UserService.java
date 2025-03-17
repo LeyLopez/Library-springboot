@@ -2,6 +2,8 @@ package com.biblio.biblioteca.security.service;
 
 
 
+import com.biblio.biblioteca.dto.LoanDTO;
+import com.biblio.biblioteca.dto.ReservationDTO;
 import com.biblio.biblioteca.dto.UserDTO;
 import com.biblio.biblioteca.entity.User;
 

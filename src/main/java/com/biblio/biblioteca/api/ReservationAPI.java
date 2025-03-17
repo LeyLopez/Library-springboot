@@ -53,17 +53,24 @@ public class ReservationAPI {
     @PutMapping("/{id}")
     public ResponseEntity<ReservationDTO> updateReservation(@PathVariable Long id, @RequestBody ReservationDTO reservation) {
         Optional<ReservationDTO> reservaToUpdate = reservationService.update(id, reservation);
-        return reservaToUpdate.map(l->ResponseEntity.ok(l))
+        return reservaToUpdate.map(l->ResponseEntity.ok().body(l))
                 .orElseGet(()->createReservation(reservation));
     }
 
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('user')")
     public ResponseEntity<ReservationDTO> deleteReservation(@PathVariable Long id) {
         return reservationService.findById(id)
                 .map(l->{
                     reservationService.delete(id);
                     return ResponseEntity.ok().body(l);
                 }).orElseThrow(()->new NotFoundException("No se encontró la reserva con el ID "+id));
+    }
+
+    @GetMapping("/user/{id}")
+    @PreAuthorize("hasRole('user')")
+    public ResponseEntity<List<ReservationDTO>> getReservationsByUserId(@PathVariable Long id) {
+        return ResponseEntity.ok(reservationService.findByUserId(id));
     }
 }

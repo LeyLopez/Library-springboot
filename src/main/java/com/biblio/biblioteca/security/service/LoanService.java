@@ -18,4 +18,6 @@ public interface LoanService {
     Optional<LoanDTO> update(Long id, LoanDTO loanDTO);
 
     List<LoanDTO> findAll();
+
+    List<LoanDTO> findByUser(Long id);
 }

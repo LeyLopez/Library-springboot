@@ -62,4 +62,10 @@ public class LoanServiceImp implements LoanService {
                 .map(dto-> loanMapper.toDTO(dto))
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public List<LoanDTO> findByUser(Long id) {
+        return userService.findUserById(id).getLoans()
+                .stream().map(loanMapper::toDTO).collect(Collectors.toList());
+    }
 }

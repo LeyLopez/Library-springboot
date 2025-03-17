@@ -17,4 +17,6 @@ public interface ReservationService {
     Optional<ReservationDTO> update(Long id, ReservationDTO reservationDTO);
 
     List<ReservationDTO> findAll();
+
+    List<ReservationDTO> findByUserId(Long id);
 }
