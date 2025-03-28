@@ -55,6 +55,7 @@ public class UserAPI {
 
 
     @PutMapping("/{id}")
+    @PreAuthorize("hasRole('user')")
     public ResponseEntity<UserDTO> updateUser(@PathVariable Long id, @RequestBody UserDTO usuario) {
         Optional<UserDTO> usuarioToUpdate = userService.update(id, usuario);
         return usuarioToUpdate.map(l->ResponseEntity.ok(l))
@@ -63,6 +64,7 @@ public class UserAPI {
 
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('user')")
     public ResponseEntity<UserDTO> deleteUser(@PathVariable Long id) {
         return userService.findById(id)
                 .map(l->{

@@ -25,6 +25,7 @@ public class ReservationAPI {
     }
 
     @GetMapping
+    @PreAuthorize("hasRole('user')")
     public ResponseEntity<List<ReservationDTO>> getReservations() {
         return ResponseEntity.ok(reservationService.findAll());
     }

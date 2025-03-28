@@ -105,34 +105,7 @@ INSERT INTO generos (name) VALUES
 
 INSERT INTO usuarios (name, lastname, email, username, password, kind_of_document, document_number, date_of_birth, phone_number, address) VALUES
 ('Carlos', 'González', 'carlosg@gmail.com', 'carlitos', '123456', 'DNI', 12345678, '1990-05-14', '3001234567', 'Calle 1 #23-45'),
-('María', 'López', 'marial@gmail.com', 'marial', 'abcdef', 'DNI', 23456789, '1988-07-22', '3112345678', 'Carrera 7 #12-34'),
-('Javier', 'Martínez', 'javierm@gmail.com', 'javim', 'qwerty', 'Pasaporte', 34567890, '1985-09-10', '3209876543', 'Av. Principal #100-50'),
-('Ana', 'Ramírez', 'anar@gmail.com', 'anarami', 'password', 'DNI', 45678901, '1992-03-30', '3027654321', 'Calle 45 #67-89'),
-('David', 'Fernández', 'davidf@gmail.com', 'davidfer', 'pass123', 'Cédula', 56789012, '1983-11-12', '3128765432', 'Diagonal 9 #21-32'),
-('Laura', 'Hernández', 'laurah@gmail.com', 'laurahern', '1234abcd', 'DNI', 67890123, '1995-08-19', '3107654321', 'Manzana 4 Casa 6'),
-('Pedro', 'Gutiérrez', 'pedrog@gmail.com', 'pedrogut', 'gutierrez1', 'Pasaporte', 78901234, '1991-06-05', '3002345678', 'Callejón 3 #4-56'),
-('Sofía', 'Díaz', 'sofiad@gmail.com', 'sofiadiaz', 'sofi2024', 'Cédula', 89012345, '1998-02-15', '3134567890', 'Torre 5 Apto 203'),
-('Andrés', 'Mendoza', 'andresm@gmail.com', 'andresmen', 'mendoza!', 'DNI', 90123456, '1987-04-25', '3156789012', 'Centro Comercial 2'),
-('Fernanda', 'Ortiz', 'fernandao@gmail.com', 'ferortiz', 'fernanda123', 'Cédula', 12345098, '1993-10-08', '3145678901', 'Urbanización Vista Alegre'),
-('Ricardo', 'Pérez', 'ricardop@gmail.com', 'ricardope', 'perezr', 'Pasaporte', 23456109, '1986-07-21', '3198765432', 'Barrio Los Andes'),
-('Patricia', 'Morales', 'patriciam@gmail.com', 'patmor', 'morales89', 'DNI', 34567210, '1999-01-14', '3117654321', 'Avenida de las Flores'),
-('Hugo', 'Vega', 'hugov@gmail.com', 'hugovega', 'vegahugo', 'Cédula', 45678321, '1981-09-30', '3187654321', 'Calle 56 #78-90'),
-('Elena', 'Navarro', 'elenan@gmail.com', 'elenanava', 'navarro77', 'DNI', 56789432, '1989-12-03', '3167890123', 'Conjunto Residencial Bella Vista'),
-('Tomás', 'Fuentes', 'tomasf@gmail.com', 'tomasfu', 'fuentes98', 'Pasaporte', 67890543, '1994-05-27', '3126789012', 'Calle 8 #9-10'),
-('Valentina', 'Silva', 'valentinas@gmail.com', 'valesilva', 'silvaval', 'Cédula', 78901654, '1997-11-18', '3135678901', 'Carrera 22 #45-67'),
-('Sebastián', 'Reyes', 'sebastianr@gmail.com', 'sebareyes', 'reyesseba', 'DNI', 89012765, '1982-06-08', '3146789012', 'Pasaje San Martín'),
-('Camila', 'Cárdenas', 'camilac@gmail.com', 'camilacar', 'cardenascam', 'Pasaporte', 90123876, '2000-08-22', '3156789012', 'Calle 14 #23-34'),
-('Alejandro', 'Romero', 'alejandror@gmail.com', 'alerom', 'romeroale', 'DNI', 10234987, '1996-03-12', '3167890123', 'Barrio El Poblado'),
-('Daniela', 'Castro', 'danielac@gmail.com', 'danicas', 'castrodan', 'Cédula', 11245098, '1984-01-29', '3178901234', 'Torre 3 Apto 105'),
-('Francisco', 'Santos', 'franciscos@gmail.com', 'fransan', 'santosfran', 'Pasaporte', 12256109, '1980-05-04', '3189012345', 'Urbanización Los Nogales'),
-('Victoria', 'Méndez', 'victoriam@gmail.com', 'vicmen', 'mendezvic', 'DNI', 13267210, '1993-12-11', '3190123456', 'Carrera 11 #22-33'),
-('Luis', 'Torres', 'luistorres@gmail.com', 'luistor', 'torresluis', 'Cédula', 14278321, '1992-09-17', '3201234567', 'Callejón San Pablo'),
-('Gabriela', 'Vargas', 'gabrielav@gmail.com', 'gavargas', 'vargasgab', 'Pasaporte', 15289432, '1985-07-25', '3212345678', 'Avenida Los Cedros'),
-('Héctor', 'Suárez', 'hectors@gmail.com', 'hecsuar', 'suarezhec', 'DNI', 16390543, '1979-11-03', '3223456789', 'Calle 20 #30-40'),
-('Antonia', 'Flores', 'antoniaf@gmail.com', 'antflo', 'floresant', 'Cédula', 17401654, '1998-02-14', '3234567890', 'Conjunto Residencial El Sol'),
-('Manuel', 'Peralta', 'manuelp@gmail.com', 'manuper', 'peraltaman', 'Pasaporte', 18412765, '1990-06-26', '3245678901', 'Carrera 99 #55-66'),
-('Marta', 'Aguilar', 'martaag@gmail.com', 'martagui', 'aguilarmar', 'DNI', 19423876, '1987-08-19', '3256789012', 'Pasaje San Francisco'),
-('Eduardo', 'Ríos', 'eduardor@gmail.com', 'edurios', 'riosedu', 'Cédula', 20434987, '1994-03-30', '3267890123', 'Torre 1 Apto 505');
+('María', 'López', 'marial@gmail.com', 'marial', 'abcdef', 'DNI', 23456789, '1988-07-22', '3112345678', 'Carrera 7 #12-34');
 
 INSERT INTO roles (name) VALUES
 ('ROLE_USER'), 
@@ -140,35 +113,8 @@ INSERT INTO roles (name) VALUES
 
 
 -- Asignar roles a los 30 usuarios
-INSERT INTO user_role (user_id, role_id) VALUES (1, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (2, 2);
-INSERT INTO user_role (user_id, role_id) VALUES (3, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (4, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (5, 2);
-INSERT INTO user_role (user_id, role_id) VALUES (6, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (7, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (8, 2);
-INSERT INTO user_role (user_id, role_id) VALUES (9, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (10, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (11, 2);
-INSERT INTO user_role (user_id, role_id) VALUES (12, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (13, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (14, 2);
-INSERT INTO user_role (user_id, role_id) VALUES (15, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (16, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (17, 2);
-INSERT INTO user_role (user_id, role_id) VALUES (18, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (19, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (20, 2);
-INSERT INTO user_role (user_id, role_id) VALUES (21, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (22, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (23, 2);
-INSERT INTO user_role (user_id, role_id) VALUES (24, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (25, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (26, 2);
-INSERT INTO user_role (user_id, role_id) VALUES (27, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (28, 1);
-INSERT INTO user_role (user_id, role_id) VALUES (29, 2);
+INSERT INTO user_role (user_id, role_id) VALUES (2, 1);
+INSERT INTO user_role (user_id, role_id) VALUES (1, 2);
 
 INSERT INTO libros (title, description, date_of_publication, quantity, cover_page, author_id, genre_id) VALUES
 ('Cien años de soledad', 'Novela de realismo mágico', '1967-06-05', 5, 'https://covers.openlibrary.org/b/id/9354981-L.jpg', 1, 1),
@@ -208,98 +154,98 @@ INSERT INTO libros (title, description, date_of_publication, quantity, cover_pag
 
 INSERT INTO prestamos (loan_date, devolution_date, status_change_date, user_id, book_id, status) VALUES
 ('2024-01-10', '2024-01-20', '2024-01-15', 1, 5, 'ENTREGADO'),
-('2024-02-05', '2024-02-15', '2024-02-12', 2, 10, 'ENTREGADO'),
-('2024-03-01', '2024-03-11', '2024-03-10', 3, 15, 'CANCELADO'),
-('2024-04-12', '2024-04-22', '2024-04-20', 4, 20, 'VENCIDO'),
-('2024-05-03', '2024-05-13', '2024-05-11', 5, 25, 'ENTREGADO'),
-('2024-06-08', '2024-06-18', '2024-06-15', 6, 30, 'ENTREGADO'),
-('2024-07-14', '2024-07-24', '2024-07-22', 7, 28, 'CANCELADO'),
-('2024-08-19', '2024-08-29', '2024-08-27', 8, 10, 'VENCIDO'),
-('2024-09-23', '2024-10-03', '2024-10-01', 9, 15, 'ENTREGADO'),
-('2024-10-30', '2024-11-09', '2024-11-07', 10, 10, 'ENTREGADO'),
-('2024-11-11', '2024-11-21', '2024-11-19', 11, 1, 'CANCELADO'),
-('2024-12-05', '2024-12-15', '2024-12-13', 12, 2, 'VENCIDO'),
-('2024-12-12', '2024-12-22', '2024-12-20', 13, 3, 'ENTREGADO'),
-('2024-12-25', '2025-01-04', '2025-01-02', 14, 4, 'ENTREGADO'),
-('2025-01-07', '2025-01-17', '2025-01-15', 15, 6, 'CANCELADO'),
-('2025-01-18', '2025-01-28', '2025-01-26', 16, 7, 'VENCIDO'),
-('2025-02-02', '2025-02-12', '2025-02-10', 17, 8, 'ENTREGADO'),
-('2025-02-14', '2025-02-24', '2025-02-22', 18, 9, 'ENTREGADO'),
-('2025-03-01', '2025-03-11', '2025-03-09', 19, 11, 'CANCELADO'),
-('2025-03-15', '2025-03-25', '2025-03-23', 20, 12, 'VENCIDO'),
-('2025-03-27', '2025-04-06', '2025-04-04', 21, 13, 'ENTREGADO'),
-('2025-04-09', '2025-04-19', '2025-04-17', 22, 14, 'ENTREGADO'),
-('2025-04-22', '2025-05-02', '2025-04-30', 23, 16, 'CANCELADO'),
-('2025-05-06', '2025-05-16', '2025-05-14', 24, 17, 'VENCIDO'),
-('2025-05-19', '2025-05-29', '2025-05-27', 25, 18, 'ENTREGADO'),
-('2025-06-02', '2025-06-12', '2025-06-10', 26, 19, 'ENTREGADO'),
-('2025-06-16', '2025-06-26', '2025-06-24', 27, 21, 'CANCELADO'),
-('2025-06-30', '2025-07-10', '2025-07-08', 28, 22, 'VENCIDO'),
-('2025-07-12', '2025-07-22', '2025-07-20', 29, 23, 'ENTREGADO'),
-('2025-07-25', '2025-08-04', '2025-08-02', 20, 24, 'ENTREGADO'),
+('2024-02-05', '2024-02-15', '2024-02-12', 1, 10, 'ENTREGADO'),
+('2024-03-01', '2024-03-11', '2024-03-10', 1, 15, 'CANCELADO'),
+('2024-04-12', '2024-04-22', '2024-04-20', 1, 20, 'VENCIDO'),
+('2024-05-03', '2024-05-13', '2024-05-11', 1, 25, 'ENTREGADO'),
+('2024-06-08', '2024-06-18', '2024-06-15', 1, 30, 'ENTREGADO'),
+('2024-07-14', '2024-07-24', '2024-07-22', 1, 28, 'CANCELADO'),
+('2024-08-19', '2024-08-29', '2024-08-27', 1, 10, 'VENCIDO'),
+('2024-09-23', '2024-10-03', '2024-10-01', 1, 15, 'ENTREGADO'),
+('2024-10-30', '2024-11-09', '2024-11-07', 1, 10, 'ENTREGADO'),
+('2024-11-11', '2024-11-21', '2024-11-19', 1, 1, 'CANCELADO'),
+('2024-12-05', '2024-12-15', '2024-12-13', 1, 2, 'VENCIDO'),
+('2024-12-12', '2024-12-22', '2024-12-20', 1, 3, 'ENTREGADO'),
+('2024-12-25', '2025-01-04', '2025-01-02', 1, 4, 'ENTREGADO'),
+('2025-01-07', '2025-01-17', '2025-01-15', 1, 6, 'CANCELADO'),
+('2025-01-18', '2025-01-28', '2025-01-26', 1, 7, 'VENCIDO'),
+('2025-02-02', '2025-02-12', '2025-02-10', 1, 8, 'ENTREGADO'),
+('2025-02-14', '2025-02-24', '2025-02-22', 1, 9, 'ENTREGADO'),
+('2025-03-01', '2025-03-11', '2025-03-09', 1, 11, 'CANCELADO'),
+('2025-03-15', '2025-03-25', '2025-03-23', 1, 12, 'VENCIDO'),
+('2025-03-27', '2025-04-06', '2025-04-04', 1, 13, 'ENTREGADO'),
+('2025-04-09', '2025-04-19', '2025-04-17', 1, 14, 'ENTREGADO'),
+('2025-04-22', '2025-05-02', '2025-04-30', 1, 16, 'CANCELADO'),
+('2025-05-06', '2025-05-16', '2025-05-14', 1, 17, 'VENCIDO'),
+('2025-05-19', '2025-05-29', '2025-05-27', 1, 18, 'ENTREGADO'),
+('2025-06-02', '2025-06-12', '2025-06-10', 1, 19, 'ENTREGADO'),
+('2025-06-16', '2025-06-26', '2025-06-24', 1, 21, 'CANCELADO'),
+('2025-06-30', '2025-07-10', '2025-07-08', 1, 22, 'VENCIDO'),
+('2025-07-12', '2025-07-22', '2025-07-20', 1, 23, 'ENTREGADO'),
+('2025-07-25', '2025-08-04', '2025-08-02', 1, 24, 'ENTREGADO'),
 ('2025-08-08', '2025-08-18', '2025-08-16', 1, 26, 'CANCELADO'),
-('2025-08-20', '2025-08-30', '2025-08-28', 2, 27, 'VENCIDO'),
-('2025-09-03', '2025-09-13', '2025-09-11', 3, 28, 'ENTREGADO'),
-('2025-09-17', '2025-09-27', '2025-09-25', 4, 29, 'ENTREGADO'),
-('2025-10-01', '2025-10-11', '2025-10-09', 5, 11, 'CANCELADO'),
-('2025-10-14', '2025-10-24', '2025-10-22', 6, 12, 'VENCIDO'),
-('2025-10-28', '2025-11-07', '2025-11-05', 7, 13, 'ENTREGADO'),
-('2025-11-11', '2025-11-21', '2025-11-19', 8, 14, 'ENTREGADO'),
-('2025-11-25', '2025-12-05', '2025-12-03', 9, 16, 'CANCELADO'),
-('2025-12-08', '2025-12-18', '2025-12-16', 10, 17, 'VENCIDO'),
-('2025-12-22', '2026-01-01', '2025-12-30', 11, 18, 'ENTREGADO'),
-('2026-01-04', '2026-01-14', '2026-01-12', 12, 19, 'ENTREGADO'),
-('2026-01-18', '2026-01-28', '2026-01-26', 13, 11, 'CANCELADO'),
-('2026-02-01', '2026-02-11', '2026-02-09', 14, 12, 'VENCIDO'),
-('2026-02-15', '2026-02-25', '2026-02-23', 15, 13, 'ENTREGADO');
+('2025-08-20', '2025-08-30', '2025-08-28', 1, 27, 'VENCIDO'),
+('2025-09-03', '2025-09-13', '2025-09-11', 1, 28, 'ENTREGADO'),
+('2025-09-17', '2025-09-27', '2025-09-25', 1, 29, 'ENTREGADO'),
+('2025-10-01', '2025-10-11', '2025-10-09', 1, 11, 'CANCELADO'),
+('2025-10-14', '2025-10-24', '2025-10-22', 1, 12, 'VENCIDO'),
+('2025-10-28', '2025-11-07', '2025-11-05', 1, 13, 'ENTREGADO'),
+('2025-11-11', '2025-11-21', '2025-11-19', 1, 14, 'ENTREGADO'),
+('2025-11-25', '2025-12-05', '2025-12-03', 1, 16, 'CANCELADO'),
+('2025-12-08', '2025-12-18', '2025-12-16', 1, 17, 'VENCIDO'),
+('2025-12-22', '2026-01-01', '2025-12-30', 1, 18, 'ENTREGADO'),
+('2026-01-04', '2026-01-14', '2026-01-12', 1, 19, 'ENTREGADO'),
+('2026-01-18', '2026-01-28', '2026-01-26', 1, 11, 'CANCELADO'),
+('2026-02-01', '2026-02-11', '2026-02-09', 1, 12, 'VENCIDO'),
+('2026-02-15', '2026-02-25', '2026-02-23', 1, 13, 'ENTREGADO');
 
 
 INSERT INTO reservas (reservation_date, reservation_end_date, status_change_date, user_id, book_id, status) VALUES
 ('2024-01-05', '2024-01-15', '2024-01-10', 1, 5, 'ENTREGADO'),
-('2024-02-10', '2024-02-20', '2024-02-18', 2, 10, 'CANCELADO'),
-('2024-03-03', '2024-03-13', '2024-03-11', 3, 15, 'VENCIDO'),
-('2024-04-15', '2024-04-25', '2024-04-23', 4, 20, 'ENTREGADO'),
-('2024-05-07', '2024-05-17', '2024-05-15', 5, 25, 'ENTREGADO'),
-('2024-06-12', '2024-06-22', '2024-06-20', 6, 30, 'CANCELADO'),
-('2024-07-18', '2024-07-28', '2024-07-26', 7, 15, 'VENCIDO'),
-('2024-08-22', '2024-09-01', '2024-08-30', 8, 10, 'ENTREGADO'),
-('2024-09-27', '2024-10-07', '2024-10-05', 9, 15, 'ENTREGADO'),
-('2024-10-31', '2024-11-10', '2024-11-08', 10, 20, 'CANCELADO'),
-('2024-11-13', '2024-11-23', '2024-11-21', 11, 1, 'VENCIDO'),
-('2024-12-08', '2024-12-18', '2024-12-16', 12, 2, 'ENTREGADO'),
-('2024-12-15', '2024-12-25', '2024-12-23', 13, 3, 'ENTREGADO'),
-('2024-12-28', '2025-01-07', '2025-01-05', 14, 4, 'CANCELADO'),
-('2025-01-10', '2025-01-20', '2025-01-18', 15, 6, 'VENCIDO'),
-('2025-01-21', '2025-01-31', '2025-01-29', 16, 7, 'ENTREGADO'),
-('2025-02-06', '2025-02-16', '2025-02-14', 17, 8, 'ENTREGADO'),
-('2025-02-18', '2025-02-28', '2025-02-26', 18, 9, 'CANCELADO'),
-('2025-03-05', '2025-03-15', '2025-03-13', 19, 11, 'VENCIDO'),
-('2025-03-19', '2025-03-29', '2025-03-27', 20, 12, 'ENTREGADO'),
-('2025-03-31', '2025-04-10', '2025-04-08', 21, 13, 'ENTREGADO'),
-('2025-04-12', '2025-04-22', '2025-04-20', 22, 14, 'CANCELADO'),
-('2025-04-25', '2025-05-05', '2025-05-03', 23, 16, 'VENCIDO'),
-('2025-05-09', '2025-05-19', '2025-05-17', 24, 17, 'ENTREGADO'),
-('2025-05-22', '2025-06-01', '2025-05-30', 25, 18, 'ENTREGADO'),
-('2025-06-06', '2025-06-16', '2025-06-14', 26, 19, 'CANCELADO'),
-('2025-06-20', '2025-06-30', '2025-06-28', 27, 21, 'VENCIDO'),
-('2025-07-02', '2025-07-12', '2025-07-10', 28, 22, 'ENTREGADO'),
-('2025-07-15', '2025-07-25', '2025-07-23', 29, 23, 'ENTREGADO'),
-('2025-07-28', '2025-08-07', '2025-08-05', 19, 24, 'CANCELADO'),
+('2024-02-10', '2024-02-20', '2024-02-18', 1, 10, 'CANCELADO'),
+('2024-03-03', '2024-03-13', '2024-03-11', 1, 15, 'VENCIDO'),
+('2024-04-15', '2024-04-25', '2024-04-23', 1, 20, 'ENTREGADO'),
+('2024-05-07', '2024-05-17', '2024-05-15', 1, 25, 'ENTREGADO'),
+('2024-06-12', '2024-06-22', '2024-06-20', 1, 30, 'CANCELADO'),
+('2024-07-18', '2024-07-28', '2024-07-26', 1, 15, 'VENCIDO'),
+('2024-08-22', '2024-09-01', '2024-08-30', 1, 10, 'ENTREGADO'),
+('2024-09-27', '2024-10-07', '2024-10-05', 1, 15, 'ENTREGADO'),
+('2024-10-31', '2024-11-10', '2024-11-08', 1, 20, 'CANCELADO'),
+('2024-11-13', '2024-11-23', '2024-11-21', 1, 1, 'VENCIDO'),
+('2024-12-08', '2024-12-18', '2024-12-16', 1, 2, 'ENTREGADO'),
+('2024-12-15', '2024-12-25', '2024-12-23', 1, 3, 'ENTREGADO'),
+('2024-12-28', '2025-01-07', '2025-01-05', 1, 4, 'CANCELADO'),
+('2025-01-10', '2025-01-20', '2025-01-18', 1, 6, 'VENCIDO'),
+('2025-01-21', '2025-01-31', '2025-01-29', 1, 7, 'ENTREGADO'),
+('2025-02-06', '2025-02-16', '2025-02-14', 1, 8, 'ENTREGADO'),
+('2025-02-18', '2025-02-28', '2025-02-26', 1, 9, 'CANCELADO'),
+('2025-03-05', '2025-03-15', '2025-03-13', 1, 11, 'VENCIDO'),
+('2025-03-19', '2025-03-29', '2025-03-27', 1, 12, 'ENTREGADO'),
+('2025-03-31', '2025-04-10', '2025-04-08', 1, 13, 'ENTREGADO'),
+('2025-04-12', '2025-04-22', '2025-04-20', 1, 14, 'CANCELADO'),
+('2025-04-25', '2025-05-05', '2025-05-03', 1, 16, 'VENCIDO'),
+('2025-05-09', '2025-05-19', '2025-05-17', 1, 17, 'ENTREGADO'),
+('2025-05-22', '2025-06-01', '2025-05-30', 1, 18, 'ENTREGADO'),
+('2025-06-06', '2025-06-16', '2025-06-14', 1, 19, 'CANCELADO'),
+('2025-06-20', '2025-06-30', '2025-06-28', 1, 21, 'VENCIDO'),
+('2025-07-02', '2025-07-12', '2025-07-10', 1, 22, 'ENTREGADO'),
+('2025-07-15', '2025-07-25', '2025-07-23', 1, 23, 'ENTREGADO'),
+('2025-07-28', '2025-08-07', '2025-08-05', 1, 24, 'CANCELADO'),
 ('2025-08-11', '2025-08-21', '2025-08-19', 1, 26, 'VENCIDO'),
-('2025-08-23', '2025-09-02', '2025-08-31', 2, 27, 'ENTREGADO'),
-('2025-09-06', '2025-09-16', '2025-09-14', 3, 28, 'ENTREGADO'),
-('2025-09-20', '2025-09-30', '2025-09-28', 4, 29, 'CANCELADO'),
-('2025-10-04', '2025-10-14', '2025-10-12', 5, 21, 'VENCIDO'),
-('2025-10-17', '2025-10-27', '2025-10-25', 6, 22, 'ENTREGADO'),
-('2025-10-31', '2025-11-10', '2025-11-08', 7, 23, 'ENTREGADO'),
-('2025-11-14', '2025-11-24', '2025-11-22', 8, 24, 'CANCELADO'),
-('2025-11-27', '2025-12-07', '2025-12-05', 9, 26, 'VENCIDO'),
-('2025-12-10', '2025-12-20', '2025-12-18', 10, 27, 'ENTREGADO'),
-('2025-12-24', '2026-01-03', '2026-01-01', 11, 28, 'ENTREGADO'),
-('2026-01-07', '2026-01-17', '2026-01-15', 12, 29, 'CANCELADO'),
-('2026-01-21', '2026-01-31', '2026-01-29', 13, 11, 'VENCIDO'),
-('2026-02-04', '2026-02-14', '2026-02-12', 14, 22, 'ENTREGADO'),
-('2026-02-18', '2026-02-28', '2026-02-26', 15, 13, 'ENTREGADO');
+('2025-08-23', '2025-09-02', '2025-08-31', 1, 27, 'ENTREGADO'),
+('2025-09-06', '2025-09-16', '2025-09-14', 1, 28, 'ENTREGADO'),
+('2025-09-20', '2025-09-30', '2025-09-28', 1, 29, 'CANCELADO'),
+('2025-10-04', '2025-10-14', '2025-10-12', 1, 21, 'VENCIDO'),
+('2025-10-17', '2025-10-27', '2025-10-25', 1, 22, 'ENTREGADO'),
+('2025-10-31', '2025-11-10', '2025-11-08', 1, 23, 'ENTREGADO'),
+('2025-11-14', '2025-11-24', '2025-11-22', 1, 24, 'CANCELADO'),
+('2025-11-27', '2025-12-07', '2025-12-05', 1, 26, 'VENCIDO'),
+('2025-12-10', '2025-12-20', '2025-12-18', 1, 27, 'ENTREGADO'),
+('2025-12-24', '2026-01-03', '2026-01-01', 1, 28, 'ENTREGADO'),
+('2026-01-07', '2026-01-17', '2026-01-15', 1, 29, 'CANCELADO'),
+('2026-01-21', '2026-01-31', '2026-01-29', 1, 11, 'VENCIDO'),
+('2026-02-04', '2026-02-14', '2026-02-12', 1, 22, 'ENTREGADO'),
+('2026-02-18', '2026-02-28', '2026-02-26', 1, 13, 'ENTREGADO');
 
 
 

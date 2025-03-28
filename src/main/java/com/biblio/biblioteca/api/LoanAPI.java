@@ -24,6 +24,7 @@ public class LoanAPI {
     }
 
     @GetMapping
+    @PreAuthorize("hasRole('user')")
     public ResponseEntity<List<LoanDTO>> getLoans() {
         return ResponseEntity.ok(prestamoService.findAll());
     }
