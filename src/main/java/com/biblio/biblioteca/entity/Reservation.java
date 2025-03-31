@@ -47,4 +47,9 @@ public class Reservation {
     private Status status;
 
 
+    public void changeDisponibility (){
+        this.book.setQuantity(this.book.getQuantity() - 1);
+    }
+
+
 }

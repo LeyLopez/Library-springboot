@@ -51,4 +51,8 @@ public class Loan {
     @Enumerated(EnumType.STRING)
     private Status status;
 
+    public void changeQuantity(){
+        this.book.setQuantity(this.book.getQuantity() - 1);
+    }
+
 }

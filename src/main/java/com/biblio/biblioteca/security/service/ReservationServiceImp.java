@@ -34,6 +34,7 @@ public class ReservationServiceImp implements ReservationService {
     @Override
     public ReservationDTO save(ReservationDTO reservationDTO) {
         Reservation reservation = reservationRepository.save(reservationMapper.toEntity(reservationDTO, userService, bookService));
+        reservation.changeDisponibility();
         return reservationMapper.toDTO(reservation);
     }
 

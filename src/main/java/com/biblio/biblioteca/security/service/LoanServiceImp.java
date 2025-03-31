@@ -35,6 +35,7 @@ public class LoanServiceImp implements LoanService {
     @Override
     public LoanDTO save(LoanDTO loanDTO) {
         Loan loan = loanRepository.save(loanMapper.toEntity(loanDTO, userService, bookService));
+        loan.changeQuantity();
         return loanMapper.toDTO(loan);
     }
 

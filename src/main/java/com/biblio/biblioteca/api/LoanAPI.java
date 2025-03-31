@@ -15,6 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/prestamo")
+@CrossOrigin(origins = "http://localhost:5173/")
 public class LoanAPI {
 
     private final LoanService prestamoService;
