@@ -179,19 +179,392 @@ Antes de ejecutar la aplicación, asegúrate de tener instalado:
 ---
 
 ### `GET /api/libro` -Obtener lista de libros.
+**Ejemplo de respuesta (200 OK)**
+```json
+  [
+    {
+        "id": 57,
+        "title": "Don Quijote de la Mancha",
+        "description": "Historia del ingenioso hidalgo",
+        "dateOfPublication": "1605-01-16T05:00:00.000+00:00",
+        "quantity": 3,
+        "author": 2,
+        "coverPage": "https://covers.openlibrary.org/b/id/8228691-L.jpg",
+        "genre": 1
+    },
+    {
+        "id": 58,
+        "title": "1984",
+        "description": "Distopía futurista",
+        "dateOfPublication": "1949-06-08T05:00:00.000+00:00",
+        "quantity": 7,
+        "author": 3,
+        "coverPage": "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+        "genre": 1
+    },
+    {
+        "id": 59,
+        "title": "Orgullo y prejuicio",
+        "description": "Romance clásico",
+        "dateOfPublication": "1813-01-28T05:00:00.000+00:00",
+        "quantity": 4,
+        "author": 4,
+        "coverPage": "https://covers.openlibrary.org/b/id/8231990-L.jpg",
+        "genre": 2
+    },
+    {
+        "id": 60,
+        "title": "Moby Dick",
+        "description": "Aventura marina",
+        "dateOfPublication": "1851-10-18T05:00:00.000+00:00",
+        "quantity": 6,
+        "author": 5,
+        "coverPage": "https://covers.openlibrary.org/b/id/7222276-L.jpg",
+        "genre": 2
+    },
+    {
+        "id": 61,
+        "title": "Crimen y castigo",
+        "description": "Reflexión sobre la culpa",
+        "dateOfPublication": "1866-01-01T05:00:00.000+00:00",
+        "quantity": 5,
+        "author": 6,
+        "coverPage": "https://covers.openlibrary.org/b/id/8231856-L.jpg",
+        "genre": 3
+    },
+    {
+        "id": 62,
+        "title": "El principito",
+        "description": "Fábula filosófica",
+        "dateOfPublication": "1943-04-06T05:00:00.000+00:00",
+        "quantity": 9,
+        "author": 7,
+        "coverPage": "https://covers.openlibrary.org/b/id/8774816-L.jpg",
+        "genre": 3
+    },
+    {
+        "id": 63,
+        "title": "Los miserables",
+        "description": "Relato de redención",
+        "dateOfPublication": "1862-01-01T05:00:00.000+00:00",
+        "quantity": 3,
+        "author": 8,
+        "coverPage": "https://covers.openlibrary.org/b/id/8231851-L.jpg",
+        "genre": 5
+    },
+    {
+        "id": 64,
+        "title": "La odisea",
+        "description": "Épica de Homero",
+        "dateOfPublication": "0800-01-01T05:00:00.000+00:00",
+        "quantity": 5,
+        "author": 9,
+        "coverPage": "https://covers.openlibrary.org/b/id/8231995-L.jpg",
+        "genre": 2
+    },
+    {
+        "id": 65,
+        "title": "El nombre de la rosa",
+        "description": "Misterio medieval",
+        "dateOfPublication": "1980-01-01T05:00:00.000+00:00",
+        "quantity": 4,
+        "author": 10,
+        "coverPage": "https://covers.openlibrary.org/b/id/8231950-L.jpg",
+        "genre": 1
+    },
+    {
+        "id": 66,
+        "title": "Rayuela",
+        "description": "Narrativa experimental",
+        "dateOfPublication": "1963-06-28T05:00:00.000+00:00",
+        "quantity": 6,
+        "author": 11,
+        "coverPage": "https://covers.openlibrary.org/b/id/8231980-L.jpg",
+        "genre": 2
+    }
+]
+```
+
+---
+
 ### `GET /api/reserva` -Obtener lista de reservas.
-### `GET /api/prestamo` -Obtener lista de reservas.
+
+**Ejemplo de respuesta (200 OK)**
+```json
+  [
+    {
+        "id": 51,
+        "reservationDate": "2024-06-12T05:00:00.000+00:00",
+        "reservationEndDate": "2024-06-22T05:00:00.000+00:00",
+        "statusChangeDate": "2024-06-20T05:00:00.000+00:00",
+        "user": 3,
+        "book": 60,
+        "status": "CANCELADO"
+    },
+    {
+        "id": 74,
+        "reservationDate": "2025-07-15T05:00:00.000+00:00",
+        "reservationEndDate": "2025-07-25T05:00:00.000+00:00",
+        "statusChangeDate": "2025-07-23T05:00:00.000+00:00",
+        "user": 3,
+        "book": 67,
+        "status": "ENTREGADO"
+    }
+]
+```
+
+
+---
+
+### `GET /api/prestamo` -Obtener lista de préstamos.
+**Ejemplo de respuesta (200 OK)**
+```json
+  [
+    {
+        "id": 140,
+        "loanDate": "2024-05-03T05:00:00.000+00:00",
+        "devolutionDate": "2024-05-13T05:00:00.000+00:00",
+        "statusChangeDate": "2024-05-11T05:00:00.000+00:00",
+        "user": 3,
+        "book": 58,
+        "status": "ENTREGADO"
+    },
+    {
+        "id": 141,
+        "loanDate": "2024-06-08T05:00:00.000+00:00",
+        "devolutionDate": "2024-06-18T05:00:00.000+00:00",
+        "statusChangeDate": "2024-06-15T05:00:00.000+00:00",
+        "user": 3,
+        "book": 59,
+        "status": "ENTREGADO"
+    }
+]
+```
+
+
+---
 ### `GET /api/libro/{id}` -Obtener libro por ID.
+**Ejemplo de respuesta (200 OK)**
+```json
+  {
+    "id": 58,
+    "title": "1984",
+    "description": "Distopía futurista",
+    "dateOfPublication": "1949-06-08T05:00:00.000+00:00",
+    "quantity": 7,
+    "author": 3,
+    "coverPage": "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+    "genre": 1
+}
+```
+
+
+---
 ### `GET /api/usuario/{id}` -Obtener usuario por ID.
+**Ejemplo de respuesta (200 OK)**
+```json
+  {
+    "id": 3,
+    "name": "Leydis",
+    "lastname": "Lopez",
+    "email": "ley@gmail.com",
+    "username": "Leydis",
+    "password": "$2a$10$7/R1BTdKIJU0XVFa.mHPEOKB4OMgZzsq5aamMhPRVCC0xqfoqU3PW",
+    "kindOfDocument": "CEDULA",
+    "documentNumber": 2342342,
+    "dateOfBirth": "2003-12-12T00:00:00.000+00:00",
+    "phoneNumber": "12345678",
+    "address": "Calle 13"
+}
+```
+
+
+---
 ### `GET /api/reserva/{id}` -Obtener reserva por ID.
+**Ejemplo de respuesta (200 OK)**
+```json
+  {
+    "id": 89,
+    "reservationDate": "2026-02-04T05:00:00.000+00:00",
+    "reservationEndDate": "2026-02-14T05:00:00.000+00:00",
+    "statusChangeDate": "2026-02-12T05:00:00.000+00:00",
+    "user": 3,
+    "book": 62,
+    "status": "ENTREGADO"
+}
+```
+
+
+---
 ### `GET /api/prestamo/{id}` -Obtener prestamo por ID.
+**Ejemplo de respuesta (200 OK)**
+```json
+  {
+    "id": 140,
+    "loanDate": "2024-05-03T05:00:00.000+00:00",
+    "devolutionDate": "2024-05-13T05:00:00.000+00:00",
+    "statusChangeDate": "2024-05-11T05:00:00.000+00:00",
+    "user": 3,
+    "book": 58,
+    "status": "ENTREGADO"
+}
+```
+
+
+---
 ### `GET /api/autor/{id}` -Obtener autor por ID.
+**Ejemplo de respuesta (200 OK)**
+```json
+  {
+    "id": 1,
+    "name": "Gabriel",
+    "lastname": "García Márquez",
+    "dateOfBirth": "1927-03-06T05:00:00.000+00:00"
+}
+```
+
+
+---
 ### `GET /api/genero/{id}` -Obtener genero de un libro por ID del genero.
+
+```json
+  {
+    "id": 1,
+    "name": "Realismo Mágico"
+}
+```
+
+
+---
+
 ### `POST /api/genero` -Agregar genero a la biblioteca.
+
+**Ejemplo de petición**
+```json
+  {
+    "id":1,
+    "name":"terror"
+}
+```
+
+**Ejemplo de respuesta (200 OK)**
+```json
+  {
+    "id": 1,
+    "name": "terror"
+}
+```
+---
+
+
 ### `POST /api/libro` -Agregar libro a la biblioteca.
+**Ejemplo de petición**
+```json
+  {
+    "title":"cien años",
+    "description":"macondo",
+    "dateOfPublication": "2000-12-07",
+    "quantity": 3,
+    "coverPage":"andja",
+    "author":2
+}
+```
+
+**Ejemplo de respuesta (200 OK)**
+```json
+  {
+    "id": 90,
+    "title": "cien años",
+    "description": "macondo",
+    "dateOfPublication": "2000-12-07T00:00:00.000+00:00",
+    "quantity": 3,
+    "author": 2,
+    "coverPage": "andja",
+    "genre": null
+}
+```
+
+
+---
 ### `POST /api/autor` -Agregar autor a la biblioteca.
+**Ejemplo de petición**
+```json
+  {
+   "name":"Leidis",
+   "lastname":"Lopez",
+   "dateOfBirth":"2002-26-09"
+}
+
+```
+
+**Ejemplo de respuesta (200 OK)**
+```json
+  {
+    "id": 53,
+    "name": "Leidis",
+    "lastname": "Lopez",
+    "dateOfBirth": "2004-02-09T00:00:00.000+00:00"
+}
+```
+
+
+---
 ### `POST /api/prestamo` -Agregar prestamo a la biblioteca.
+**Ejemplo de petición**
+```json
+  {
+    "loanDate":"2025-01-12",
+    "devolutionDate":"2025-02-12",
+    "statusChangeDate":"2025-02-10",
+    "user":3,
+    "book":58,
+    "status":"ENTREGADO"
+}
+```
+
+**Ejemplo de respuesta (200 OK)**
+```json
+  {
+    "id": 187,
+    "loanDate": "2025-01-12T00:00:00.000+00:00",
+    "devolutionDate": "2025-02-12T00:00:00.000+00:00",
+    "statusChangeDate": "2025-02-10T00:00:00.000+00:00",
+    "user": 3,
+    "book": 58,
+    "status": "ENTREGADO"
+}
+```
+
+
+---
 ### `POST /api/reserva` -Agregar reserva a la biblioteca.
+**Ejemplo de petición**
+```json
+  {
+    "reservationDate":"2024-12-30",
+    "reservationEndDate":"2025-01-30",
+    "statusChangeDate": "2024-01-25",
+    "user":3,
+    "book":58,
+    "status":"ENTREGADO"
+}
+```
+
+**Ejemplo de respuesta (200 OK)**
+```json
+  {
+    "id": 99,
+    "reservationDate": "2024-12-30T00:00:00.000+00:00",
+    "reservationEndDate": "2025-01-30T00:00:00.000+00:00",
+    "statusChangeDate": "2024-01-25T00:00:00.000+00:00",
+    "user": 3,
+    "book": 58,
+    "status": "ENTREGADO"
+}
+```
+
+
+---
 ### `PUT /api/usuario/{id}` -Actualizar un usuario por su ID.
 ### `PUT /api/libro/{id}` -Actualizar un libro por su ID.
 ### `PUT /api/genero/{id}` -Actualizar un genero por su ID.
