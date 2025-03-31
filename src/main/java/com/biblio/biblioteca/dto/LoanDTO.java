@@ -11,4 +11,4 @@ public record LoanDTO(Long id,
                       Long user,
                       Long book,
                       Status status) {
-}
+}   

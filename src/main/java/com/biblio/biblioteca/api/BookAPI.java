@@ -4,6 +4,7 @@ import com.biblio.biblioteca.dto.BookDTO;
 import com.biblio.biblioteca.exception.NotFoundException;
 import com.biblio.biblioteca.security.service.BookService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -13,6 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/libro")
+@CrossOrigin(origins = "http://localhost:5173/")
 public class BookAPI {
 
     private final BookService bookService;
@@ -34,6 +36,7 @@ public class BookAPI {
 
 
     @PostMapping
+    @PreAuthorize("hasRole('admin')")
     public ResponseEntity<BookDTO> createdBook(@RequestBody BookDTO libro) {
         return createBook(libro);
     }
@@ -47,6 +50,7 @@ public class BookAPI {
 
 
     @PutMapping("/{id}")
+    @PreAuthorize("hasRole('admin')")
     public ResponseEntity<BookDTO> updateBook(@PathVariable Long id, @RequestBody BookDTO book) {
         Optional<BookDTO> libroToUpdate = bookService.update(id, book);
         return libroToUpdate.map(l->ResponseEntity.ok(l))
@@ -55,6 +59,7 @@ public class BookAPI {
 
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('admin')")
     public ResponseEntity<BookDTO> deleteBook(@PathVariable Long id) {
         return bookService.findById(id)
                 .map(l->{
