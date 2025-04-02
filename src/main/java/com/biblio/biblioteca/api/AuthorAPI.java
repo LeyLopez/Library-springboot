@@ -53,7 +53,7 @@ public class AuthorAPI {
 
 
     @PutMapping("/{id}")
-    public ResponseEntity<AuthorDTO> updateAuhtor(@PathVariable Long id, @RequestBody AuthorDTO autor){
+    public ResponseEntity<AuthorDTO> updateAuthor(@PathVariable Long id, @RequestBody AuthorDTO autor){
         Optional<AuthorDTO> autorToUpdate = authorService.update(id, autor);
         return autorToUpdate.map(a->ResponseEntity.ok(a))
                 .orElseGet(()-> {
@@ -62,7 +62,7 @@ public class AuthorAPI {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<AuthorDTO> deteleAuthor(@PathVariable Long id){
+    public ResponseEntity<AuthorDTO> deleteAuthor(@PathVariable Long id){
         return authorService.findById(id).map(a->{
             authorService.delete(id);
             return ResponseEntity.ok().body(a);
