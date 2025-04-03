@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("api/auth/")
-@CrossOrigin("http://localhost:5173/")
+@CrossOrigin("https://library-frontend-rho-liard.vercel.app/")
 public class AuthenticationAPI {
 
     @Autowired private AuthenticationManager authenticationManager;

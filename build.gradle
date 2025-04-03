@@ -43,7 +43,6 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
     testImplementation 'org.mockito:mockito-core:5.6.0'
     testImplementation 'org.mockito:mockito-junit-jupiter:5.6.0'
-    testImplementation "org.testcontainers:testcontainers:1.20.6"
 }
 
 tasks.named('test') {

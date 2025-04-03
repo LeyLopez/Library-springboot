@@ -14,7 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/libro")
-@CrossOrigin(origins = "http://localhost:5173/")
+@CrossOrigin(origins = "https://library-frontend-rho-liard.vercel.app/")
 public class BookAPI {
 
     private final BookService bookService;

@@ -75,7 +75,7 @@ public class WebSecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource(){
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:5173"));//dirección donde corre el frontend
+        configuration.setAllowedOrigins(List.of("https://library-frontend-rho-liard.vercel.app"));//dirección donde corre el frontend
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS")); //Metodos permitidos
         configuration.setAllowedHeaders(List.of("Authorization", "Content-Type")); //Encabezados permitidos
         configuration.setExposedHeaders(List.of("Authorization")); //Encabezados expuestos

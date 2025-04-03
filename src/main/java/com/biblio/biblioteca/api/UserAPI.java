@@ -16,7 +16,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/usuario")
-@CrossOrigin(origins = "http://localhost:5173/")
+@CrossOrigin(origins = "https://library-frontend-rho-liard.vercel.app/")
 public class UserAPI {
 
     private final UserService userService;
